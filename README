@@ -1,2 +1,6 @@
-nginx code review demo
+Nginx code review demo.
+
+We have to compile the nginx before starting compile this demo.
+
+We just use nginx to write demo programs.
 
