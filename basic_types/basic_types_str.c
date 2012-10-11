@@ -9,11 +9,9 @@
 
 volatile ngx_cycle_t  *ngx_cycle;
 
-void
-ngx_log_error_core(ngx_uint_t level, ngx_log_t *log, ngx_err_t err,
-                   const char *fmt, ...)
-{
-}
+/* 避免加载整个NginX日志子系统而定义的空日志核心函数 */
+volatile ngx_cycle_t  *ngx_cycle;
+void ngx_log_error_core(ngx_uint_t level, ngx_log_t *log, ngx_err_t err, const char *fmt, ...) { }
 
 int main()
 {
